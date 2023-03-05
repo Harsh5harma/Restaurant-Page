@@ -1,0 +1,23 @@
+Tabs:
+1) Breakfast
+    -Aloo paratha
+    -Poha
+    -corn flakes
+2) Lunch
+    -Pulao
+    -shahi paneer and roti
+    -dosa
+3) Dinner
+    -dal roti
+    -palak paneer 
+    -soya chaap with rice
+
+Implementation?
+Index.js will have 3 sections.
+-Header
+-Main Content
+-Footer (just needs to be there for the sake of it)
+
+Write 3 modules for the main section and swap them in and out at the click of 3 buttons that shall be present
+on the header.
+ignore all css, just create the html for now.
