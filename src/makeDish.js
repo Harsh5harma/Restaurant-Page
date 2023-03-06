@@ -2,26 +2,21 @@
 // eslint-disable-next-line require-jsdoc
 export default function makeDish(image, title, desc, itemClass='', titleClass='', imgClass='', descClass='') {
   const item = document.createElement('div');
-  const itemClasses = itemClass.split(' ');
-  item.classList=itemClasses;
+  item.className=itemClass;
 
   const dish = new Image();
   dish.src=image;
-  const imgClasses = imgClass.split(' ');
-  dish.classList = imgClasses;
+  dish.className = imgClass;
 
   const dishtitle = document.createElement('div');
   dishtitle.textContent=title;
-  const titleClasses = titleClass.split(' ');
-  dishtitle.classList=titleClasses;
+  dishtitle.className=titleClass;
 
   const dishdesc=document.createElement('div');
   dishdesc.textContent=desc;
-  const descClasses = descClass.split(' ');
-  dishdesc.classList =descClasses;
+  dishdesc.className =descClass;
 
   const els = [dishtitle, dish, dishdesc];
   els.forEach((x) =>item.appendChild(x));
-
   return item;
 }

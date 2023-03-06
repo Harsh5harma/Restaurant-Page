@@ -17,7 +17,6 @@ export default function lunch(mainContent) {
 
   const desc3='Dosa is probably South India\'s most beloved dish. Come try the best there is.';
   const item3 = makeDish(dosa, 'Dosa', desc3, 'items item3', 'title title3', 'dimg dimg3', 'desc desc3');
-
   mainContent.appendChild(item1);
   mainContent.appendChild(item2);
   mainContent.appendChild(item3);

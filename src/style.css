@@ -1,7 +1,6 @@
 #content{
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 .header{
     height: 25vh;
@@ -33,9 +32,40 @@ button{
     flex:1 0 auto;
     display: flex;
     flex-direction: column;
+    height: 70vh;
 }
 .footer{
     background-color: black;
     height:5vh;
     flex-shrink: 0vh;
 }
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.items{
+    width:500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .dimg{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .desc{
+    font-size:24px;
+  }

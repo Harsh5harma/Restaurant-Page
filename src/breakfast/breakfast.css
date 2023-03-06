@@ -1,0 +1,10 @@
+/*
+what's the rules like with multiple CSS files?
+To explain my situation, I've got 3 modules loading in the main content section at the click of their respective buttons. I have given every element in each module the same classes because only one of them is loaded at a time. 
+Now I've also given each one their own stylesheet (module1.css module2.css module3.css), just in case I want to style them differently (I'm not following DRY here but that's on purpose because I wanted to test this out). 
+Now what's happening is that although I've written the CSS for just one module, that same CSS gets applied to the other modules when they load in. 
+
+My doubt lies in the fact that I'm not importing let's say module 1's stylesheet into module 3. etc so why am I getting this behaviour. 
+One possible reason I an think of is that "Out of sight, Out of mind" is not how classes work. The stylesheet once applied stays there unless overridden by some other sheet and so when my current module gets unloaded and a different module with the same classes gets loaded in the previous stylesheet styles the new module now instead.
+
+Am I correct or is something else is the cause for this? */

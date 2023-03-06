@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 console.log('gandu number 1');
 import './style.css';
-import breakfast from './breakfast.js';
-import lunch from './lunch.js';
-import dinner from './dinner.js';
+import './lunch/lunch.css';
+import breakfast from './breakfast/breakfast.js';
+import lunch from './lunch/lunch.js';
+import dinner from './dinner/dinner.js';
 
 
 const loaderFunc = (function() {
@@ -36,6 +37,8 @@ const loaderFunc = (function() {
   content.appendChild(header);
   content.appendChild(mainContent);
   content.append(footer);
+
+  breakfast(mainContent);
   b1.addEventListener('click', ()=>{
     mainContent.textContent='';
     breakfast(mainContent);
